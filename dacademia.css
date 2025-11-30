@@ -116,3 +116,10 @@ top:0px; left:0px;
 content:'\e92a';
 font-family: 'Starry';
 } 
+
+#dacademia tr:nth-child(odd) .filled:nth-child(even):before {
+ content:'\a43'!important;
+}
+#dacademia tr:nth-child(2) .filled:nth-child(odd):before {
+ content:'\e904'!important;
+}
