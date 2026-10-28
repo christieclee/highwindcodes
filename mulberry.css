@@ -28,7 +28,7 @@ background-color: rgba(var(--white));
 width: 420px; 
 height: 450px; 
 margin: 20px; 
-position: absolute;
+position: relative;
 z-index: 4; 
 padding: 5px 20px; 
   overflow: hidden; 
@@ -44,7 +44,7 @@ padding: 5px 20px;
   overflow-x: hidden;
   overflow-y: scroll; 
   height: 425px;
-  position: absolute; 
+  position: relative; 
   top: 15px; 
 }
 
@@ -53,14 +53,14 @@ padding: 5px 20px;
 
 .mulberry-month {
   position: relative;
-  dispay: block;
+  display: block;
   width: 100px; 
+  height: 40px; 
   color: rgba(var(--black));
   font-size: 35px; 
-  top: -15px; 
-  margin-left: 25px; 
+  top: -5px; 
+  left: 25px;
   z-index: 5;
-  height: 40px; 
 }
 
 .mulberry-monthcircle {
@@ -316,14 +316,15 @@ left: 20px;
 }
 
 .mulberry-year {
-  font-weight: 600; 
+  font-weight: 600!important; 
   position: relative; 
   text-orientation: mixed;
-    display: inline-block;
+  display: inline-block;
   writing-mode: vertical-lr;
   left: 255px; 
   top: 35px; 
   color: rgba(var(--hmain), 0.5);
+font-size: 16px; 
 }
 
 .mulberry-right {
@@ -347,14 +348,14 @@ top: 5px;
 } 
 
 .mulberry-threadcount {
-position: relative; 
+position: absolute; 
 left: 35px;
-  width: 90px; 
-  bottom: -30px; 
+width: 90px; 
+bottom: -30px; 
 font-size: 25px; 
-  color: rgba(var(--black), 0.7);
+color: rgba(var(--black), 0.7);
 text-align: center;
-display: block;
+display: inline-block;
 }
 
 
@@ -364,25 +365,27 @@ content: 'out of';
   text-transform: uppercase; 
 font-weight: 700;
   color: rgba(var(--shadow));
-  position: absolute; 
+  position: relative; 
   bottom: 50px;
-  left: 25px; 
+  left: 2px; 
 }
 
 .threadcount-number {
- position: relative; 
-  left: -45px;  
+ position: absolute; 
+  left: -15px;
+  top: -30px;
 }
 
 .threadcap-number {
- position: relative; 
-top: -58px;  
-  right: -50px;
+ position: absolute;
+  text-align: right; 
+  top: -30px;  
+  right: -20px;
 }
 
 .mulberry-threadcount hr { 
 position: relative; 
-top: -28px; 
+bottom: 35px;
   left: 3px; 
   width: 40px; 
 border: none; 
