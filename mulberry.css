@@ -390,9 +390,10 @@ line-height: 17px;
  position: absolute;
   text-align: right; 
   bottom: 63px;
-  right: -15px;
+  right: -17px;
  line-height: 17px; 
 }
+
 
 .mulberry-threadcount hr { 
 position: relative; 
