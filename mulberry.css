@@ -379,6 +379,7 @@ font-weight: 700;
   bottom: 61px;
   left: -15px;
   line-height: 14px; 
+  text-align: left; 
 
 }
 
@@ -389,7 +390,6 @@ font-weight: 700;
   right: -18px;
   line-height: 14px; 
 }
-
 
 .mulberry-threadcount hr { 
 position: relative; 
