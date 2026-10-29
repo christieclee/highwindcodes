@@ -540,8 +540,9 @@ background-size: cover;
     transform: scaleX(-1);
  } 
  #om .m-lastname {
-   left: 10px;
+   left: -5px;
  }
+
 
 #pv {   
 --hmain:217, 143, 76;
