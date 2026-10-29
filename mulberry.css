@@ -61,10 +61,10 @@ padding: 5px 20px;
   height: 40px; 
   color: rgba(var(--black));
   font-size: 35px; 
-  top: 0px; 
+  top: -5px; 
   left: 25px;
   z-index: 5;
-  line-height: 10px; 
+  line-height: 15px; 
 }
 
 .mulberry-monthcircle {
