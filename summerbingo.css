@@ -1,0 +1,165 @@
+  .bingo-container
+{
+font-family: 'Urbanist';
+position:relative;
+overflow: hidden;
+border-radius:20px;
+margin:25px auto;
+width:540px;
+height: 595px; 
+background:rgba(var(--color0));
+color:rgba(var(--black));
+font-size:12px;
+line-height:17px;
+box-shadow:2px 2px 2px #d3d3d3;
+text-align:left;
+}
+
+.bingo-name {
+padding:0px 5px;
+font-size:40px;
+font-weight:200;
+text-transform: uppercase;
+text-align:right;  
+line-height:30px;
+font-weight:200;
+color:rgba(var(--color3));
+width:500px;
+  height: 110px; 
+position:relative;
+font-family: 'virgo delight';
+  z-index: 4;
+  text-shadow: 2px 2px rgba(var(--white));
+}
+
+.bingo-name:before { 
+  content: 'Bingo!';
+  font-size: 40px; 
+  letter-spacing: 4px; 
+  color: rgba(var(--white));
+  text-shadow: 2px 2px rgba(var(--color3));
+  position: absolute; 
+  bottom: 15px;
+  right: 0px; 
+  opacity: 1; 
+    z-index: 1;
+} 
+
+.bingo-name:after { 
+  content: '\a123';
+  font-family: 'Starry';
+  font-size: 55px; 
+  color: rgba(var(--white), 1);
+  position: absolute; 
+  right: 170px; 
+  top: 70px; 
+  text-shadow: 0.5px 0.5px rgba(var(--color3),0.5);
+  transform: rotate(-20deg);
+} 
+
+.bingo-table {
+position:relative;
+z-index:1;
+margin:0px 25px 25px;
+left: 5px;
+top: 10px; 
+background: transparent;
+border-collapse: separate;
+display:flex;
+
+}
+
+.prompt, .filled {
+position:relative;
+background:rgba(var(--white));
+border-radius:15px;
+width:190px;
+height:170px;
+padding: 20px;
+text-align:center;
+font-size:19px;
+line-height:21px;
+text-transform:lowercase;
+color:rgba(var(--color3));
+z-index: 2;
+font-weight: 500;
+  margin: 0px ;
+}
+
+.filled {
+box-shadow:inset 2px 2px 3px rgba(var(--color1)),
+inset -1px -1px 1px rgba(var(--color1));
+background:linear-gradient(to bottom, rgba(var(--color1),0.8), rgba(var(--color2),0.6)), rgba(var(--white));
+color:rgba(var(--white));
+text-shadow:
+  -1px 0 rgba(var(--color2), .45),
+  0 1px rgba(var(--color2), .45),
+  1px 0 rgba(var(--color2), .45),
+  0 -1px rgba(var(--color2), .45);
+ font-weight:600;
+}
+
+#middlebingo {
+border-radius: 100%; 
+width:135px;
+height:135px;
+font-size:26px;
+position: absolute; 
+top: 130px; 
+left: 145px; 
+z-index: 5; 
+background-color: rgba(var(--white));
+border: 10px solid rgba(var(--color0));
+ padding:20px; 
+   display:flex;
+   flex-flow:column wrap;
+   justify-content:center;
+   align-items:center;
+}
+
+#middlebingo span {
+  display:block;
+  text-transform:uppercase;
+  font-size:11px;
+}
+
+.filled:before {
+font-family: starry; 
+position:absolute; 
+font-size: 90px;
+z-index:-1;
+margin:30px 10px;
+ font-weight:400;
+display:block;
+width:100px;
+height:100px;
+color: rgba(var(--white), 0.6);
+opacity: 0.7;
+left: 44%;
+top: 50%;
+transform: translate(-50%,-50%);
+  line-height: 40px; 
+}
+
+.prompt a, .filled a {
+z-index:4;
+display:block;
+width:150px;
+height:150px;
+position:absolute;
+top:0px; left:0px;
+}
+
+/*color*/
+
+#summerbingo {
+--color0:235, 176, 133; 
+--color1:160, 194, 226; 
+--color2:61, 160, 226;
+--color3:231, 111, 81;
+}
+
+ #summerbingo .filled:before {
+content:'\a71';
+font-family: 'Starry';
+} 
